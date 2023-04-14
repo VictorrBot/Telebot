@@ -111,7 +111,7 @@ module.exports = alpha = async (alpha, bot) => {
             case 'sc':
             case 'script':
             case 'scrip': {
-                alpha.reply("Source code this bot", {
+                alpha.reply("Source Code This Bot", {
                     reply_markup: {
                         inline_keyboard: [
                             [{
@@ -439,7 +439,7 @@ module.exports = alpha = async (alpha, bot) => {
 🔗 URL Video : ${url}
 📝 Description : ${description}
 
-Kirim berikut perintah untuk mendownload media
+Kirim Perintah Berikut Untuk Mengunduh
 ${prefix}ytmp3 ${url}
 ${prefix}ytmp4 ${url}`
                 alpha.replyWithPhoto({
@@ -450,11 +450,11 @@ ${prefix}ytmp4 ${url}`
                     reply_markup: {
                         inline_keyboard: [
                             [{
-                                    text: '🎻 Audio',
+                                    text: '🎻 AUDIO',
                                     callback_data: 'ytmp3 ' + user_id + url
                                 },
                                 {
-                                    text: 'Video 🎦',
+                                    text: 'VIDEO 🎦',
                                     callback_data: 'ytmp4 ' + user_id + url
                                 }
                             ]
@@ -2926,7 +2926,7 @@ ${prefix}ytmp4 ${url}`
 4. ${prefix}foliokanan
 
 Contoh:
-${prefix}nuliskiri Subscribe Ya YT Kirara`)
+${prefix}nuliskiri Hai Kakak`)
                 break
             case 'foliokiri':
             case 'foliokanan':
