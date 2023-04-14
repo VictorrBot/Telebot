@@ -10,7 +10,7 @@ const fs = require('fs')
 const os = require('os')
 const speed = require('performance-now')
 
-if (BOT_TOKEN == 'YOUR_TELEGRAM_BOT_TOKEN') {
+if (BOT_TOKEN == '6281571181:AAEZEa5F0LaIxjqcqjFdjQG8KFb0y6HYM1U') {
     return console.log(lang.noToken)
 }
 
@@ -39,7 +39,7 @@ async function startalpha() {
             fetchJson
         } = simple
         const pushname = user.full_name;
-        const username = user.username ? user.username : "zeeone_ofc";
+        const username = user.username ? user.username : "Kei_Keizha";
         const isCreator = [alpha.botInfo.username, ...global.OWNER].map(v => v.replace("https://t.me/", '')).includes(user.username ? user.username : "-")
         const reply = async (text) => {
             for (var x of simple.range(0, text.length, 4096)) { //maks 4096 character, jika lebih akan eror
@@ -140,7 +140,7 @@ async function startalpha() {
                 break
                 case "owner": {
                     await alpha.sendContact(OWNER_NUMBER, OWNER_NAME)
-                    reply(`My lord [${OWNER_NAME}](${OWNER[0]}) 👑`)
+                    reply(`My Developer [${OWNER_NAME}](${OWNER[0]}) 👑`)
                 }
                 break
                 case "ytmp3": {
@@ -163,7 +163,7 @@ async function startalpha() {
                         size,
                         download
                     } = result.result
-                    if (size > 50000) { //batas download 50mb, tamabahin jika kurang (misal 100mb = 100000)
+                    if (size > 500000) { //batas download 50mb, tamabahin jika kurang (misal 100mb = 100000)
                         let key = "「 YOUTUBE AUDIO 」\n\n"
                         key += `• Id: ${id}\n`
                         key += `• Title: ${title}\n`
@@ -217,7 +217,7 @@ async function startalpha() {
                         download
                     } = result.result
                     var getdl = await fetchJson(`https://tinyurl.com/api-create.php?url=${download}`)
-                    if (size > 50000) { //batas download 50mb, tamabahin jika kurang (misal 100mb = 100000)
+                    if (size > 500000) { //batas download 50mb, tamabahin jika kurang (misal 100mb = 100000)
                         let key = "「 YOUTUBE VIDEO 」\n\n"
                         key += `• Id: ${id}\n`
                         key += `• Title: ${title}\n`
@@ -266,7 +266,7 @@ async function startalpha() {
                 inline_keyboard: [
                     [{
                         text: 'Script',
-                        url: "https://github.com/zeeoneofficial/telebot"
+                        url: "https://github.com/kirara/telebot"
                     }, {
                         text: 'Owner',
                         url: OWNER[0]
@@ -285,7 +285,7 @@ async function startalpha() {
                 inline_keyboard: [
                     [{
                         text: 'Script',
-                        url: "https://github.com/zeeoneofficial/telebot"
+                        url: "https://github.com/kirara/telebot"
                     }, {
                         text: 'Owner',
                         url: OWNER[0]
