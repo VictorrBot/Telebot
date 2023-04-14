@@ -15,30 +15,28 @@ exports.getStyle = (style, style2) => {
 exports.wait = "`⏳ Sedang Diproses`"
 exports.ok = `Done ✅`
 exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hitall, latensii, os, simple, week, date, dateIslamic, username, isCreator, user_id) => {
-    var ini_anu = `👋 Hai ${pushname}
+    var ini_anu = `Hi ${pushname}
 
-BOT INFO 🤖
-• Creator: [@${OWNER_NAME}](${OWNER[0]})
-• Sponsored: [@BotFather](https://t.me/BotFather)
-• Prefix: ${prefix}
-• Total Hit: ${hitall} 👀
-• Speed: ${latensii.toFixed(4)} Second ⏰
-• Memory Used: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB 💾
-• Hostname: ${os.hostname()} 🖥️
-• Platform: ${os.platform()} 🖥️
-• Runtime: ${simple.runtime(process.uptime())} ⌛
+╭─❒ 「 Bot Info 」 
+├ Creator :  [@${OWNER_NAME}](${OWNER[0]})
+├ Sponsored :  [@BotFather](https://t.me/BotFather)
+├ Prefix :   ${prefix}
+├ Total hit : ${hitall}
+├ Speed : ${latensii.toFixed(4)} Second
+├ Memory Used : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+├ Hostname : ${os.hostname()}
+├ Platform : ${os.platform()}
+╰❒ Runtime : ${simple.runtime(process.uptime())}
 
-DATE INFO 📅
-• Masehi : ${week}, ${date}
-• Hijriah : ${dateIslamic} 🕌
+╭─❒ 「 Date Info 」 
+├ Masehi : ${week}, ${date}
+├ Hijriah : ${dateIslamic}
+╰❒
 
-USER INFO 👤
-• Name: ${pushname}
-• Profile: [@${pushname}](https://t.me/${username}) 💬
-• Owner : ${isCreator ? 'True' : `False`}
-
-BOT COMMUNITY 👥
-• https://t.me/kirara_area 💬
+╭─❒ 「 User Info 」 
+├ Name : ${pushname}
+├ Profile : [@${pushname}](https://t.me/${username})
+╰❒ Owner : ${isCreator ? 'True' : `False`}
 `
     var button = [
         [{
