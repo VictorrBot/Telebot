@@ -36,7 +36,7 @@ exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hit
 ├ Name : ${pushname}
 ├ Profile : [@${pushname}](https://t.me/${username})
 ╰❒ Owner : ${isCreator ? 'True' : `False`}se`}
-https://t.me/kirara_area
+
 `
     var button = [
         [{
