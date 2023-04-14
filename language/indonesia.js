@@ -16,7 +16,6 @@ exports.wait = "`⏳ Sedang Diproses`"
 exports.ok = `Done ✅`
 exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hitall, latensii, os, simple, week, date, dateIslamic, username, isCreator, user_id) => {
     var ini_anu = `Hi ${pushname}
-
 ╭─❒ 「 Bot Info 」 
 ├ Creator :  [@${OWNER_NAME}](${OWNER[0]})
 ├ Sponsored :  [@BotFather](https://t.me/BotFather)
@@ -36,7 +35,8 @@ exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hit
 ╭─❒ 「 User Info 」 
 ├ Name : ${pushname}
 ├ Profile : [@${pushname}](https://t.me/${username})
-╰❒ Owner : ${isCreator ? 'True' : `False`}
+╰❒ Owner : ${isCreator ? 'True' : `False`}se`}
+https://t.me/kirara_area
 `
     var button = [
         [{
