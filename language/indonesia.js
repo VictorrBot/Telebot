@@ -19,7 +19,7 @@ exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hit
 
 BOT INFO 🤖
 • Creator: [@${OWNER_NAME}](${OWNER[0]})
-• Sponsored: @BotFather
+• Sponsored: [@BotFather](https://t.me/BotFather)
 • Prefix: ${prefix}
 • Total Hit: ${hitall} 👀
 • Speed: ${latensii.toFixed(4)} Second ⏰
