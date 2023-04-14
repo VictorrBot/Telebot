@@ -1083,7 +1083,8 @@ exports.textprocmd3 = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「  TEXT PRO 」 
+    var caption = `TEXT PRO ✒️
+    
 /pink-sparkling
 /purple
 /purple-balloon
