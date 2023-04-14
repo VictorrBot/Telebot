@@ -39,7 +39,7 @@ USER INFO
 `
     var button = [
         [{
-                text: '🃏 Anime',
+                text: '🇯🇵 Anime',
                 callback_data: 'animecmd ' + user_id
             },
             {
@@ -48,11 +48,11 @@ USER INFO
             }
         ],
         [{
-                text: '👧 Cecan',
+                text: '♀️ Cecan',
                 callback_data: 'cecancmd ' + user_id
             },
             {
-                text: 'Cogan️ 👦',
+                text: 'Cogan️ ♂️',
                 callback_data: 'cogancmd ' + user_id
             }
         ],
@@ -66,7 +66,7 @@ USER INFO
             },
         ],
         [{
-                text: '🖼️ Logo Maker',
+                text: '🎨 Logo Maker',
                 callback_data: 'logocmd ' + user_id
             },
             {
@@ -75,20 +75,20 @@ USER INFO
             },
         ],
         [{
-                text: '👙 Nsfw & Sfw',
+                text: '🔞 Nsfw & Sfw',
                 callback_data: 'nsfwcmd ' + user_id
             },
             {
-                text: 'Photooxy 🖼️',
+                text: 'Photooxy 🖌️',
                 callback_data: 'photooxycmd ' + user_id
             },
         ],
         [{
-                text: '👦 Owner',
+                text: '👑 Owner',
                 callback_data: 'owner ' + user_id
             },
             {
-                text: 'Text Pro 🖌️',
+                text: 'Text Pro ✒️',
                 callback_data: 'textprocmd ' + user_id
             },
         ],
@@ -123,16 +123,16 @@ USER INFO
 exports.animecmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'menucmd ' + user_id
             },
             {
-                text: 'Asupan 😋',
+                text: 'ASUPAN 😋',
                 callback_data: 'asupancmd ' + user_id
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
@@ -200,7 +200,7 @@ exports.animecmd = async (alpha, thumbnail, user_id) => {
 exports.asupancmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'animecmd ' + user_id
             },
             {
@@ -209,7 +209,7 @@ exports.asupancmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
@@ -254,7 +254,7 @@ exports.asupancmd = async (alpha, thumbnail, user_id) => {
 exports.cecancmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'asupancmd ' + user_id
             },
             {
@@ -263,7 +263,7 @@ exports.cecancmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
@@ -298,7 +298,7 @@ exports.cecancmd = async (alpha, thumbnail, user_id) => {
 exports.cogancmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'cecancmd ' + user_id
             },
             {
@@ -307,7 +307,7 @@ exports.cogancmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
@@ -349,7 +349,7 @@ exports.cogancmd = async (alpha, thumbnail, user_id) => {
 exports.downloadcmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'cogancmd ' + user_id
             },
             {
@@ -358,7 +358,7 @@ exports.downloadcmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
@@ -394,7 +394,7 @@ exports.downloadcmd = async (alpha, thumbnail, user_id) => {
 exports.ephotocmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'downloadcmd ' + user_id
             },
             {
@@ -403,7 +403,7 @@ exports.ephotocmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
@@ -469,7 +469,7 @@ exports.ephotocmd = async (alpha, thumbnail, user_id) => {
 exports.ephotocmd2 = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'ephotocmd ' + user_id
             },
             {
@@ -478,7 +478,7 @@ exports.ephotocmd2 = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
@@ -544,7 +544,7 @@ exports.ephotocmd2 = async (alpha, thumbnail, user_id) => {
 exports.logocmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'ephotocmd ' + user_id
             },
             {
@@ -553,7 +553,7 @@ exports.logocmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
@@ -610,7 +610,7 @@ exports.logocmd = async (alpha, thumbnail, user_id) => {
 exports.logocmd2 = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'ephotocmd ' + user_id
             },
             {
@@ -619,7 +619,7 @@ exports.logocmd2 = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
@@ -675,7 +675,7 @@ exports.logocmd2 = async (alpha, thumbnail, user_id) => {
 exports.islamcmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'logocmd ' + user_id
             },
             {
@@ -684,7 +684,7 @@ exports.islamcmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
@@ -717,7 +717,7 @@ exports.islamcmd = async (alpha, thumbnail, user_id) => {
 exports.nsfwcmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'islamcmd ' + user_id
             },
             {
@@ -726,7 +726,7 @@ exports.nsfwcmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
@@ -819,7 +819,7 @@ exports.nsfwcmd = async (alpha, thumbnail, user_id) => {
 exports.photooxycmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'nsfwcmd ' + user_id
             },
             {
@@ -828,7 +828,7 @@ exports.photooxycmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
@@ -899,7 +899,7 @@ exports.photooxycmd = async (alpha, thumbnail, user_id) => {
 exports.textprocmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'photooxycmd ' + user_id
             },
             {
@@ -908,7 +908,7 @@ exports.textprocmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
@@ -981,7 +981,7 @@ exports.textprocmd = async (alpha, thumbnail, user_id) => {
 exports.textprocmd2 = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'textprocmd ' + user_id
             },
             {
@@ -990,7 +990,7 @@ exports.textprocmd2 = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
@@ -1070,7 +1070,7 @@ exports.textprocmd2 = async (alpha, thumbnail, user_id) => {
 exports.textprocmd3 = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
-                text: '⬅️ Back',
+                text: '⬅️ BACK',
                 callback_data: 'textprocmd2 ' + user_id
             },
             {
@@ -1079,7 +1079,7 @@ exports.textprocmd3 = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '>>> DEV <<<',
             callback_data: 'owner ' + user_id
         }, ]
     ]
