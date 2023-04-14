@@ -38,7 +38,7 @@ Profile : [@${pushname}](https://t.me/${username})
 Owner : ${isCreator ? 'True' : `False`}
 
 BOT COMMUNITY
-
+t.me/kirara_area
 `
     var button = [
         [{
