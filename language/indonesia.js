@@ -1,18 +1,18 @@
 exports.noToken = "Bot token tidak boleh kosong, silahkan buat bot melalui https://t.me/BotFather"
 
 exports.first_chat = (botname, pushname) => {
-    return `Halo ${pushname}! Nama saya ${botname} - Saya adalah Bot Telegram multi fungsi! Klik /menu untuk mengetahui lebih lanjut tentang cara menggunakan bot ini.
+    return `Halo ${pushname}! Nama Saya ${botname} - Saya Adalah Bot Telegram Multi Fungsi! Klik /menu Untuk Mengetahui Lebih Lanjut Tentang Cara Menggunakan Bot Ini.
 
-Bergabunglah dengan [channel saya](https://t.me/zeeone_ofc) untuk mendapatkan informasi tentang semua pembaruan terbaru.
+Bergabunglah Dengan [Channel Saya](https://t.me/kirara_area) Untuk Mendapatkan Informasi Tentang Semua Pembaruan Terbaru.
 
-Kirim perintah /privacy untuk melihat syarat dan ketentuan penggunaan bot.
+Kirim Perintah /privacy Untuk Melihat Syarat Dan Ketentuan Penggunaan Bot.
 `
 }
-exports.snk = "Syarat & Ketentuan Bot\n\n1. isi sendiri"
+exports.snk = "Syarat & Ketentuan Bot\n\n1. Gunakan Dengan Bijak"
 exports.getStyle = (style, style2) => {
     return `**${style2} Yg Kamu Masukkan Salah**\n\n__Berikut List ${style2} Yg Benar, Total__ **${style}** __${style2}__\n\n`
 }
-exports.wait = "`⏳ Mohon tunggu sebentar`"
+exports.wait = "`⏳ Sedang Diproses`"
 exports.ok = `Done ✅`
 exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hitall, latensii, os, simple, week, date, dateIslamic, username, isCreator, user_id) => {
     var ini_anu = `👋 Hi ${pushname}
@@ -79,7 +79,7 @@ USER INFO
                 callback_data: 'nsfwcmd ' + user_id
             },
             {
-                text: 'Photooxy 🖌️',
+                text: 'Photooxy 📸',
                 callback_data: 'photooxycmd ' + user_id
             },
         ],
@@ -127,7 +127,7 @@ exports.animecmd = async (alpha, thumbnail, user_id) => {
                 callback_data: 'menucmd ' + user_id
             },
             {
-                text: 'ASUPAN 😋',
+                text: 'Asupan 😋',
                 callback_data: 'asupancmd ' + user_id
             }
         ],
@@ -136,7 +136,8 @@ exports.animecmd = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 ANIME 」 
+    var caption = `ANIME 🇯🇵
+    
 /akame
 /anna
 /asuna-yuki
@@ -181,7 +182,6 @@ exports.animecmd = async (alpha, thumbnail, user_id) => {
 /natsu
 /tanjirou
 /loli
-╰──────────◇
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -204,7 +204,7 @@ exports.asupancmd = async (alpha, thumbnail, user_id) => {
                 callback_data: 'animecmd ' + user_id
             },
             {
-                text: 'Cecan 👧',
+                text: 'Cecan ♀️',
                 callback_data: 'cecancmd ' + user_id
             }
         ],
@@ -213,7 +213,8 @@ exports.asupancmd = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 ASUPAN 」 
+    var caption = `ASUPAN 😋
+    
 /chika
 /rikagusriani
 /bocil
@@ -235,7 +236,6 @@ exports.asupancmd = async (alpha, thumbnail, user_id) => {
 /mama-gina
 /alcakenya
 /mangayutri
-╰──────────◇
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -258,7 +258,7 @@ exports.cecancmd = async (alpha, thumbnail, user_id) => {
                 callback_data: 'asupancmd ' + user_id
             },
             {
-                text: 'Cogan️ 👦',
+                text: 'Cogan️ ♂️',
                 callback_data: 'cogancmd ' + user_id
             }
         ],
@@ -267,7 +267,8 @@ exports.cecancmd = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 CECAN 」 
+    var caption = `CECAN ♀️
+    
 /china
 /indonesia
 /malaysia
@@ -279,7 +280,6 @@ exports.cecancmd = async (alpha, thumbnail, user_id) => {
 /jiiso
 /lisa
 /rose
-╰──────────◇
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -311,7 +311,8 @@ exports.cogancmd = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 COGAN 」 
+    var caption = `COGAN ♂️
+    
 /wuyifan
 /suga
 /parkchanyeol
@@ -330,7 +331,6 @@ exports.cogancmd = async (alpha, thumbnail, user_id) => {
 /huangzitao
 /dohkyungsoo
 /baekhyung
-╰──────────◇
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -362,7 +362,8 @@ exports.downloadcmd = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 DOWNLOAD 」 
+    var caption = `DOWNLOAD 📥
+    
 /ytmp4
 /ytmp3
 /play
@@ -375,7 +376,6 @@ exports.downloadcmd = async (alpha, thumbnail, user_id) => {
 /mediafire
 /tiktok
 /tiktokaudio
-╰──────────◇
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -398,7 +398,7 @@ exports.ephotocmd = async (alpha, thumbnail, user_id) => {
                 callback_data: 'downloadcmd ' + user_id
             },
             {
-                text: 'Next ➡️',
+                text: 'NEXT ➡️',
                 callback_data: 'ephotocmd2 ' + user_id
             }
         ],
@@ -407,7 +407,8 @@ exports.ephotocmd = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 EPHOTO 360 」 
+    var caption = `EPHOTO 360 🖼️
+    
 /1917text
 /angelwing
 /announofwin
@@ -450,7 +451,6 @@ exports.ephotocmd = async (alpha, thumbnail, user_id) => {
 /metalstar
 /milkcake
 /modengold3
-╰──────────◇
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -482,7 +482,8 @@ exports.ephotocmd2 = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 EPHOTO 360 」 
+    var caption = `EPHOTO 360 🖼️
+    
 /moderngold
 /moderngold2
 /moderngoldsilver
@@ -525,7 +526,6 @@ exports.ephotocmd2 = async (alpha, thumbnail, user_id) => {
 /stylepoligon
 /lifebuoys
 /juventusshirt
-╰──────────◇
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -548,7 +548,7 @@ exports.logocmd = async (alpha, thumbnail, user_id) => {
                 callback_data: 'ephotocmd ' + user_id
             },
             {
-                text: 'Next ➡️',
+                text: 'NEXT ➡️',
                 callback_data: 'logocmd2 ' + user_id
             }
         ],
@@ -557,7 +557,8 @@ exports.logocmd = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 LOGO MAKER 」 
+    var caption = `LOGO MAKER 🎨
+    
 /anonymous2
 /astronotspace
 /avatar3q360
@@ -591,7 +592,6 @@ exports.logocmd = async (alpha, thumbnail, user_id) => {
 /crossfirecover
 /crossfirestyle
 /csgocover
-╰──────────◇
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -623,7 +623,8 @@ exports.logocmd2 = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 LOGO MAKER 」 
+    var caption = `LOGO MAKER 🎨
+    
 /cutegirlgamer
 /cyberhunterfb
 /dragonballfb
@@ -656,7 +657,6 @@ exports.logocmd2 = async (alpha, thumbnail, user_id) => {
 /teamlogo 
 /wallpaperaov 
 /wallpaperml
-╰──────────◇
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -679,7 +679,7 @@ exports.islamcmd = async (alpha, thumbnail, user_id) => {
                 callback_data: 'logocmd ' + user_id
             },
             {
-                text: 'Nsfw & Sfw 👙',
+                text: 'Nsfw & Sfw 🔞',
                 callback_data: 'nsfwcmd ' + user_id
             }
         ],
@@ -688,7 +688,8 @@ exports.islamcmd = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 ISLAMIC 」 
+    var caption = `ISLAMIC 🕌
+    
 /asmaulhusna
 /kisahnabi
 /jadwalshalat
@@ -698,7 +699,6 @@ exports.islamcmd = async (alpha, thumbnail, user_id) => {
 /listsurah
 /tafsirsurah
 /alquranaudio
-╰──────────◇
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -721,7 +721,7 @@ exports.nsfwcmd = async (alpha, thumbnail, user_id) => {
                 callback_data: 'islamcmd ' + user_id
             },
             {
-                text: 'Photooxy 🖼️',
+                text: 'Photooxy 📸',
                 callback_data: 'photooxycmd ' + user_id
             }
         ],
@@ -730,7 +730,8 @@ exports.nsfwcmd = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 NSFW & SFW 」 
+    var caption = `NSFW & SFW 🔞
+    
 /baka
 /smug
 /neko-sfw
@@ -800,7 +801,6 @@ exports.nsfwcmd = async (alpha, thumbnail, user_id) => {
 /poke
 /slap
 /tickle
-╰──────────◇
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -823,7 +823,7 @@ exports.photooxycmd = async (alpha, thumbnail, user_id) => {
                 callback_data: 'nsfwcmd ' + user_id
             },
             {
-                text: 'Text Pro ??️',
+                text: 'Text Pro ✒️',
                 callback_data: 'textprocmd ' + user_id
             }
         ],
@@ -832,7 +832,8 @@ exports.photooxycmd = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 NSFW & SFW 」 
+    var caption = `NSFW & SFW 🔞
+    
 /typography-flower
 /under-flower
 /bevel-text
@@ -880,7 +881,6 @@ exports.photooxycmd = async (alpha, thumbnail, user_id) => {
 /battlegrounds-logo
 /battlefield4
 /text-8bit
-╰──────────◇
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -903,7 +903,7 @@ exports.textprocmd = async (alpha, thumbnail, user_id) => {
                 callback_data: 'photooxycmd ' + user_id
             },
             {
-                text: 'Next ➡️',
+                text: 'NEXT ➡️',
                 callback_data: 'textprocmd2 ' + user_id
             }
         ],
@@ -912,7 +912,8 @@ exports.textprocmd = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「  TEXT PRO 」 
+    var caption = `TEXT PRO ✒️
+    
 /3dbox
 /3dchrome
 /3dglue
@@ -962,7 +963,6 @@ exports.textprocmd = async (alpha, thumbnail, user_id) => {
 /engraved
 /equalizer
 /eroded-metal
-╰──────────◇
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -985,7 +985,7 @@ exports.textprocmd2 = async (alpha, thumbnail, user_id) => {
                 callback_data: 'textprocmd ' + user_id
             },
             {
-                text: 'Next ➡️',
+                text: 'NEXT ➡️',
                 callback_data: 'textprocmd3 ' + user_id
             }
         ],
@@ -994,7 +994,8 @@ exports.textprocmd2 = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「  TEXT PRO 」 
+    var caption = `TEXT PRO ✒️
+    
 /fabric
 /fiction
 /firework
@@ -1051,7 +1052,6 @@ exports.textprocmd2 = async (alpha, thumbnail, user_id) => {
 /peridot
 /pink-balloon
 /pink-glitter
-╰──────────◇
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -1074,7 +1074,7 @@ exports.textprocmd3 = async (alpha, thumbnail, user_id) => {
                 callback_data: 'textprocmd2 ' + user_id
             },
             {
-                text: 'Anime 🃏',
+                text: 'Anime 🇯🇵',
                 callback_data: 'animecmd ' + user_id
             }
         ],
