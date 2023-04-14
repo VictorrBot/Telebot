@@ -34,7 +34,7 @@ DATE INFO
 USER INFO
 👤 Name: ${pushname}
 👥 Profile: @${pushname}
-👑 Owner: ${isCreator ? 'True' : False}
+👑 Owner : ${isCreator ? 'True' : `False`}
 
 BOT COMMUNITY
 👫 https://t.me/kirara_area
