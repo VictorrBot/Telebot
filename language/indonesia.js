@@ -1,46 +1,44 @@
 exports.noToken = "Bot token tidak boleh kosong, silahkan buat bot melalui https://t.me/BotFather"
 
 exports.first_chat = (botname, pushname) => {
-    return `Halo ${pushname}! Nama saya ${botname} - Saya adalah Bot Telegram multi fungsi! Klik /menu untuk mengetahui lebih lanjut tentang cara menggunakan bot ini.
+    return `Hai ${pushname}, Nama Saya ${botname} - Saya Adalah Bot Telegram Multi Fungsi, Klik /menu Untuk Mengetahui Lebih Lanjut Tentang Cara Menggunakan Bot Ini.
 
-Bergabunglah dengan [channel saya](https://t.me/zeeone_ofc) untuk mendapatkan informasi tentang semua pembaruan terbaru.
+Bergabung Ke Grup Bot https://t.me/hoshino_area - Agar Mendapatkan Informasi Terbaru
 
-Kirim perintah /privacy untuk melihat syarat dan ketentuan penggunaan bot.
+Kirim Perintah /privacy Untuk Melihat Syarat Dan Ketentuan Penggunaan Bot.
 `
 }
 exports.snk = "Syarat & Ketentuan Bot\n\n1. isi sendiri"
 exports.getStyle = (style, style2) => {
-    return `**${style2} Yg Kamu Masukkan Salah**\n\n__Berikut List ${style2} Yg Benar, Total__ **${style}** __${style2}__\n\n`
+    return `**${style2} Yang Kamu Masukkan Salah**\n\n__Berikut List ${style2} Yang Benar, Total__ **${style}** __${style2}__\n\n`
 }
-exports.wait = "`⏳ Mohon tunggu sebentar`"
+exports.wait = "`⏳ Mohon Tunggu Sebentar`"
 exports.ok = `Done ✅`
 exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hitall, latensii, os, simple, week, date, dateIslamic, username, isCreator, user_id) => {
-    var ini_anu = `Hi ${pushname}
+    var ini_anu = `Hai ${pushname}
 
-╭─❒ 「 Bot Info 」 
-├ Creator :  [@${OWNER_NAME}](${OWNER[0]})
-├ Sponsored :  [@BotFather](https://t.me/BotFather)
-├ Prefix :   ${prefix}
-├ Total hit : ${hitall}
-├ Speed : ${latensii.toFixed(4)} Second
-├ Memory Used : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-├ Hostname : ${os.hostname()}
-├ Platform : ${os.platform()}
-╰❒ Runtime : ${simple.runtime(process.uptime())}
+BOT INFO
+Creator: [@${OWNER_NAME}](${OWNER[0]})
+Sponsored: [@BotFather](https://t.me/BotFather)
+Prefix: ${prefix}
+Total Hit: ${hitall}
+Speed: ${latensii.toFixed(4)} Second
+Memory Used: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+Hostname: ${os.hostname()}
+Platform: ${os.platform()}
+Runtime: ${simple.runtime(process.uptime())}
 
-╭─❒ 「 Date Info 」 
-├ Masehi : ${week}, ${date}
-├ Hijriah : ${dateIslamic}
-╰❒
+DATE INFO
+Hijriah : ${dateIslamic}
 
-╭─❒ 「 User Info 」 
-├ Name : ${pushname}
-├ Profile : [@${pushname}](https://t.me/${username})
-╰❒ Owner : ${isCreator ? 'True' : `False`}
+USER INFO
+Name: ${pushname}
+Profile: [@${pushname}](https://t.me/${username})
+Owner: ${isCreator ? 'True' : `False`}
 `
     var button = [
         [{
-                text: '🃏 Anime',
+                text: '🇯🇵 Anime',
                 callback_data: 'animecmd ' + user_id
             },
             {
@@ -85,7 +83,7 @@ exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hit
             },
         ],
         [{
-                text: '👦 Owner',
+                text: '👑 Owner',
                 callback_data: 'owner ' + user_id
             },
             {
@@ -133,56 +131,56 @@ exports.animecmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 ANIME 」 
-» /akame
-» /anna
-» /asuna-yuki
-» /ayuzawa
-» /chitoge
-» /emilia
-» /erza
-» /hinata
-» /inori
-» /kaga-kouko
-» /kaori-miyazono
-» /kotori-minami
-» /killua
-» /mikasa
-» /mio-akiyama
-» /mizore-sirayuki
-» /nakiri-alice
-» /naruto
-» /riyas-gremori
-» /sakura
-» /sento-isuzu
-» /shana
-» /shiina
-» /shinka
-» /winry
-» /yukino
-» /yuzuki
-» /mikosiba
-» /luffy
-» /zoro
-» /ussop
-» /sanji
-» /minato
-» /boruto
-» /sarada
-» /mitsuki
-» /orochimaru
-» /tsunade
-» /kakashi
-» /rimuru
-» /sagiri
-» /natsu
-» /tanjirou
-» /loli
-╰──────────◇
+    var caption = `ANIME 
+⎋ /akame
+⎋ /anna
+⎋ /asuna-yuki
+⎋ /ayuzawa
+⎋ /chitoge
+⎋ /emilia
+⎋ /erza
+⎋ /hinata
+⎋ /inori
+⎋ /kaga-kouko
+⎋ /kaori-miyazono
+⎋ /kotori-minami
+⎋ /killua
+⎋ /mikasa
+⎋ /mio-akiyama
+⎋ /mizore-sirayuki
+⎋ /nakiri-alice
+⎋ /naruto
+⎋ /riyas-gremori
+⎋ /sakura
+⎋ /sento-isuzu
+⎋ /shana
+⎋ /shiina
+⎋ /shinka
+⎋ /winry
+⎋ /yukino
+⎋ /yuzuki
+⎋ /mikosiba
+⎋ /luffy
+⎋ /zoro
+⎋ /ussop
+⎋ /sanji
+⎋ /minato
+⎋ /boruto
+⎋ /sarada
+⎋ /mitsuki
+⎋ /orochimaru
+⎋ /tsunade
+⎋ /kakashi
+⎋ /rimuru
+⎋ /sagiri
+⎋ /natsu
+⎋ /tanjirou
+⎋ /loli
+
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -210,33 +208,33 @@ exports.asupancmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 ASUPAN 」 
-» /chika
-» /rikagusriani
-» /bocil
-» /geayubi
-» /santuy
-» /ukhty
-» /asupan
-» /delvira
-» /ayu
-» /bunga
-» /aura
-» /nisa
-» /ziva
-» /yana
-» /viona
-» /syania
-» /riri
-» /syifa
-» /mama-gina
-» /alcakenya
-» /mangayutri
-╰──────────◇
+    var caption = `ASUPAN
+⎋ /chika
+⎋ /rikagusriani
+⎋ /bocil
+⎋ /geayubi
+⎋ /santuy
+⎋ /ukhty
+⎋ /asupan
+⎋ /delvira
+⎋ /ayu
+⎋ /bunga
+⎋ /aura
+⎋ /nisa
+⎋ /ziva
+⎋ /yana
+⎋ /viona
+⎋ /syania
+⎋ /riri
+⎋ /syifa
+⎋ /mama-gina
+⎋ /alcakenya
+⎋ /mangayutri
+
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -264,23 +262,23 @@ exports.cecancmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 CECAN 」 
-» /china
-» /indonesia
-» /malaysia
-» /thailand
-» /korea
-» /japan
-» /vietnam
-» /jenni
-» /jiiso
-» /lisa
-» /rose
-╰──────────◇
+    var caption = `CECAN
+⎋ /china
+⎋ /indonesia
+⎋ /malaysia
+⎋ /thailand
+⎋ /korea
+⎋ /japan
+⎋ /vietnam
+⎋ /jenni
+⎋ /jiiso
+⎋ /lisa
+⎋ /rose
+
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -308,30 +306,30 @@ exports.cogancmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 COGAN 」 
-» /wuyifan
-» /suga
-» /parkchanyeol
-» /ohsehun
-» /luhan
-» /kimtaehyung
-» /kimseok
-» /kimnanjoon
-» /kimminseok
-» /kimjunmyeon
-» /kimjong
-» /kimjondae
-» /jungkook
-» /jimin
-» /jhope
-» /huangzitao
-» /dohkyungsoo
-» /baekhyung
-╰──────────◇
+    var caption = `COGAN
+⎋ /wuyifan
+⎋ /suga
+⎋ /parkchanyeol
+⎋ /ohsehun
+⎋ /luhan
+⎋ /kimtaehyung
+⎋ /kimseok
+⎋ /kimnanjoon
+⎋ /kimminseok
+⎋ /kimjunmyeon
+⎋ /kimjong
+⎋ /kimjondae
+⎋ /jungkook
+⎋ /jimin
+⎋ /jhope
+⎋ /huangzitao
+⎋ /dohkyungsoo
+⎋ /baekhyung
+
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -359,24 +357,24 @@ exports.downloadcmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 DOWNLOAD 」 
-» /ytmp4
-» /ytmp3
-» /play
-» /ytsearch
-» /igdl
-» /igphoto
-» /igvideo
-» /igreels
-» /pinterest
-» /mediafire
-» /tiktok
-» /tiktokaudio
-╰──────────◇
+    var caption = `DOWNLOAD
+⎋ /ytmp4
+⎋ /ytmp3
+⎋ /play
+⎋ /ytsearch
+⎋ /igdl
+⎋ /igphoto
+⎋ /igvideo
+⎋ /igreels
+⎋ /pinterest
+⎋ /mediafire
+⎋ /tiktok
+⎋ /tiktokaudio
+
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -404,54 +402,54 @@ exports.ephotocmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 EPHOTO 360 」 
-» /1917text
-» /angelwing
-» /announofwin
-» /birthdaycake
-» /capercut
-» /cardhalloween
-» /christmascard
-» /christmasseason
-» /covergamepubg
-» /covergraffiti
-» /dragonfire
-» /embroider
-» /fabrictext
-» /facebookgold
-» /facebooksilver
-» /funnyanimations
-» /funnyhalloween
-» /galaxybat
-» /galaxywallpaper
-» /generalexam
-» /glowingtext
-» /graffiti3d
-» /graffititext
-» /graffititext2
-» /graffititext3
-» /greetingcardvideo
-» /halloweenbats
-» /heartcup
-» /heartflashlight
-» /horrorletter
-» /icetext
-» /instagramgold
-» /instagramsilver
-» /lightningpubg
-» /lovecard
-» /lovelycute
-» /masteryavatar
-» /merrycard
-» /messagecoffee
-» /metalstar
-» /milkcake
-» /modengold3
-╰──────────◇
+    var caption = `EPHOTO 360
+⎋ /1917text
+⎋ /angelwing
+⎋ /announofwin
+⎋ /birthdaycake
+⎋ /capercut
+⎋ /cardhalloween
+⎋ /christmascard
+⎋ /christmasseason
+⎋ /covergamepubg
+⎋ /covergraffiti
+⎋ /dragonfire
+⎋ /embroider
+⎋ /fabrictext
+⎋ /facebookgold
+⎋ /facebooksilver
+⎋ /funnyanimations
+⎋ /funnyhalloween
+⎋ /galaxybat
+⎋ /galaxywallpaper
+⎋ /generalexam
+⎋ /glowingtext
+⎋ /graffiti3d
+⎋ /graffititext
+⎋ /graffititext2
+⎋ /graffititext3
+⎋ /greetingcardvideo
+⎋ /halloweenbats
+⎋ /heartcup
+⎋ /heartflashlight
+⎋ /horrorletter
+⎋ /icetext
+⎋ /instagramgold
+⎋ /instagramsilver
+⎋ /lightningpubg
+⎋ /lovecard
+⎋ /lovelycute
+⎋ /masteryavatar
+⎋ /merrycard
+⎋ /messagecoffee
+⎋ /metalstar
+⎋ /milkcake
+⎋ /modengold3
+
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -479,54 +477,54 @@ exports.ephotocmd2 = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 EPHOTO 360 」 
-» /moderngold
-» /moderngold2
-» /moderngoldsilver
-» /nameonheart
-» /noeltext
-» /projectyasuo
-» /pubgbirthday
-» /pubgglicthvideo
-» /pubgmascotlogo
-» /puppycute
-» /realembroidery
-» /retrotext
-» /rosebirthday
-» /snowontext
-» /starsnight
-» /summerbeach
-» /sunglightshadow
-» /textcakes
-» /texthalloween
-» /textonglass
-» /textsky
-» /thundertext
-» /twittergold
-» /twittersilver
-» /viettel
-» /vintagetelevision
-» /watercolor2
-» /womansday
-» /writeblood
-» /writegalaxy
-» /writehorror
-» /youtubegold
-» /youtubesilver
-» /zombie3d
-» /shirtclub
-» /steellettering
-» /letterstext
-» /barcashirt
-» /premiercup
-» /stylepoligon
-» /lifebuoys
-» /juventusshirt
-╰──────────◇
+    var caption = `EPHOTO 360
+⎋ /moderngold
+⎋ /moderngold2
+⎋ /moderngoldsilver
+⎋ /nameonheart
+⎋ /noeltext
+⎋ /projectyasuo
+⎋ /pubgbirthday
+⎋ /pubgglicthvideo
+⎋ /pubgmascotlogo
+⎋ /puppycute
+⎋ /realembroidery
+⎋ /retrotext
+⎋ /rosebirthday
+⎋ /snowontext
+⎋ /starsnight
+⎋ /summerbeach
+⎋ /sunglightshadow
+⎋ /textcakes
+⎋ /texthalloween
+⎋ /textonglass
+⎋ /textsky
+⎋ /thundertext
+⎋ /twittergold
+⎋ /twittersilver
+⎋ /viettel
+⎋ /vintagetelevision
+⎋ /watercolor2
+⎋ /womansday
+⎋ /writeblood
+⎋ /writegalaxy
+⎋ /writehorror
+⎋ /youtubegold
+⎋ /youtubesilver
+⎋ /zombie3d
+⎋ /shirtclub
+⎋ /steellettering
+⎋ /letterstext
+⎋ /barcashirt
+⎋ /premiercup
+⎋ /stylepoligon
+⎋ /lifebuoys
+⎋ /juventusshirt
+
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -554,45 +552,45 @@ exports.logocmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 LOGO MAKER 」 
-» /anonymous2
-» /astronotspace
-» /avatar3q360
-» /avatarff
-» /avatarleagueofking
-» /avatarlolbyname
-» /avataroverwatch
-» /bannerofaov
-» /bannerofaov2
-» /bannerofapex
-» /banneroffreefire
-» /banneroflol
-» /bannerofoverwatch
-» /bannerofpubg
-» /bannerytcsgo
-» /beautifulgalaxylol
-» /beautifulshimmering
-» /blueneon
-» /circlemarcotteam
-» /colorfulpubg
-» /companylogo
-» /companylogo2
-» /coverbannerlol
-» /coverdota2
-» /coverfblol
-» /coverfreefirefb
-» /coverleagueofking
-» /coverloknew
-» /coverofwarface
-» /coveronepiecefb
-» /crossfirecover
-» /crossfirestyle
-» /csgocover
-╰──────────◇
+    var caption = `LOGO MAKER
+⎋ /anonymous2
+⎋ /astronotspace
+⎋ /avatar3q360
+⎋ /avatarff
+⎋ /avatarleagueofking
+⎋ /avatarlolbyname
+⎋ /avataroverwatch
+⎋ /bannerofaov
+⎋ /bannerofaov2
+⎋ /bannerofapex
+⎋ /banneroffreefire
+⎋ /banneroflol
+⎋ /bannerofoverwatch
+⎋ /bannerofpubg
+⎋ /bannerytcsgo
+⎋ /beautifulgalaxylol
+⎋ /beautifulshimmering
+⎋ /blueneon
+⎋ /circlemarcotteam
+⎋ /colorfulpubg
+⎋ /companylogo
+⎋ /companylogo2
+⎋ /coverbannerlol
+⎋ /coverdota2
+⎋ /coverfblol
+⎋ /coverfreefirefb
+⎋ /coverleagueofking
+⎋ /coverloknew
+⎋ /coverofwarface
+⎋ /coveronepiecefb
+⎋ /crossfirecover
+⎋ /crossfirestyle
+⎋ /csgocover
+
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -620,44 +618,44 @@ exports.logocmd2 = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 LOGO MAKER 」 
-» /cutegirlgamer
-» /cyberhunterfb
-» /dragonballfb
-» /effect3donbeach
-» /elegantrotation
-» /fbgamepubgcover
-» /footballteam
-» /gaminglogo4fvs
-» /gamingmascot
-» /gradientlogo
-» /gunlogogaming
-» /introvideomaker
-» /letterlogos 
-» /logoaccording 
-» /logogamingassasin 
-» /lolcoverbyname 
-» /lolpentakill 
-» /lolwallpaper 
-» /maketeamlogo 
-» /mascotstyle 
-» /metalmascot 
-» /newlolavatar 
-» /overwatchcover 
-» /overwatchwallpaper 
-» /pencilsketch 
-» /pubgcutelogo 
-» /pubglogomaker 
-» /rovwallpaper 
-» /rovwallpaperhd 
-» /teamlogo 
-» /wallpaperaov 
-» /wallpaperml
-╰──────────◇
+    var caption = `LOGO MAKER
+⎋ /cutegirlgamer
+⎋ /cyberhunterfb
+⎋ /dragonballfb
+⎋ /effect3donbeach
+⎋ /elegantrotation
+⎋ /fbgamepubgcover
+⎋ /footballteam
+⎋ /gaminglogo4fvs
+⎋ /gamingmascot
+⎋ /gradientlogo
+⎋ /gunlogogaming
+⎋ /introvideomaker
+⎋ /letterlogos 
+⎋ /logoaccording 
+⎋ /logogamingassasin 
+⎋ /lolcoverbyname 
+⎋ /lolpentakill 
+⎋ /lolwallpaper 
+⎋ /maketeamlogo 
+⎋ /mascotstyle 
+⎋ /metalmascot 
+⎋ /newlolavatar 
+⎋ /overwatchcover 
+⎋ /overwatchwallpaper 
+⎋ /pencilsketch 
+⎋ /pubgcutelogo 
+⎋ /pubglogomaker 
+⎋ /rovwallpaper 
+⎋ /rovwallpaperhd 
+⎋ /teamlogo 
+⎋ /wallpaperaov 
+⎋ /wallpaperml
+
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -685,21 +683,21 @@ exports.islamcmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 ISLAMIC 」 
-» /asmaulhusna
-» /kisahnabi
-» /jadwalshalat
-» /randomquran
-» /randomquran2
-» /dictator
-» /listsurah
-» /tafsirsurah
-» /alquranaudio
-╰──────────◇
+    var caption = `ISLAMIC
+⎋ /asmaulhusna
+⎋ /kisahnabi
+⎋ /jadwalshalat
+⎋ /randomquran
+⎋ /randomquran2
+⎋ /dictator
+⎋ /listsurah
+⎋ /tafsirsurah
+⎋ /alquranaudio
+
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -727,81 +725,81 @@ exports.nsfwcmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 NSFW & SFW 」 
-» /baka
-» /smug
-» /neko-sfw
-» /hentai-gif
-» /spank
-» /blowjob
-» /cumarts
-» /eroyuri
-» /eroneko
-» /erokemonomimi
-» /erokitsune
-» /ero
-» /feet
-» /erofeet
-» /feetgif
-» /femdom
-» /futanari
-» /hentai
-» /holoero
-» /holo
-» /keta
-» /kitsune
-» /kemonomimi
-» /pussyart
-» /pussywankgif
-» /girl-solo
-» /girl-solo-gif
-» /tits
-» /trap
-» /yuri
-» /avatar2
-» /anal
-» /bj
-» /boobs
-» /classic
-» /cumsluts
-» /kuni
-» /lesbian
-» /neko
-» /neko-gif
-» /ahegao
-» /bdsm
-» /cuckold
-» /cum
-» /foot
-» /gangbang
-» /glasses
-» /jahy
-» /masturbation
-» /nsfw-neko
-» /orgy
-» /panties
-» /tentacles
-» /thighs
-» /zettai
-» /cuddle
-» /foxgirl
-» /kemonomimi2
-» /woof
-» /holo2
-» /hug
-» /kiss
-» /lizard
-» /meowi
-» /neko2
-» /pat
-» /poke
-» /slap
-» /tickle
-╰──────────◇
+    var caption = `NSFW & SFW
+⎋ /baka
+⎋ /smug
+⎋ /neko-sfw
+⎋ /hentai-gif
+⎋ /spank
+⎋ /blowjob
+⎋ /cumarts
+⎋ /eroyuri
+⎋ /eroneko
+⎋ /erokemonomimi
+⎋ /erokitsune
+⎋ /ero
+⎋ /feet
+⎋ /erofeet
+⎋ /feetgif
+⎋ /femdom
+⎋ /futanari
+⎋ /hentai
+⎋ /holoero
+⎋ /holo
+⎋ /keta
+⎋ /kitsune
+⎋ /kemonomimi
+⎋ /pussyart
+⎋ /pussywankgif
+⎋ /girl-solo
+⎋ /girl-solo-gif
+⎋ /tits
+⎋ /trap
+⎋ /yuri
+⎋ /avatar2
+⎋ /anal
+⎋ /bj
+⎋ /boobs
+⎋ /classic
+⎋ /cumsluts
+⎋ /kuni
+⎋ /lesbian
+⎋ /neko
+⎋ /neko-gif
+⎋ /ahegao
+⎋ /bdsm
+⎋ /cuckold
+⎋ /cum
+⎋ /foot
+⎋ /gangbang
+⎋ /glasses
+⎋ /jahy
+⎋ /masturbation
+⎋ /nsfw-neko
+⎋ /orgy
+⎋ /panties
+⎋ /tentacles
+⎋ /thighs
+⎋ /zettai
+⎋ /cuddle
+⎋ /foxgirl
+⎋ /kemonomimi2
+⎋ /woof
+⎋ /holo2
+⎋ /hug
+⎋ /kiss
+⎋ /lizard
+⎋ /meowi
+⎋ /neko2
+⎋ /pat
+⎋ /poke
+⎋ /slap
+⎋ /tickle
+
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -829,59 +827,59 @@ exports.photooxycmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 NSFW & SFW 」 
-» /typography-flower
-» /under-flower
-» /bevel-text
-» /silk-text
-» /sweet-andy
-» /smoke-typography
-» /carvedwood
-» /scary-cemetery
-» /royallook
-» /coffeecup2
-» /illuminated
-» /harry-potter2
-» /birthday-cake
-» /embroidery
-» /flaming
-» /furtext
-» /nightsky
-» /glow-rainbow
-» /gradient-avatar
-» /white-cube
-» /graffiti-cover
-» /rainbow-shine
-» /smoky-neon
-» /quotes-underfall
-» /vector-nature
-» /yellow-rose
-» /love-text
-» /underwater-ocean
-» /nature-text
-» /wolf-metal
-» /summer-text
-» /wooden-board
-» /quote-wood
-» /love-text
-» /quotes-undergrass
-» /naruto-banner
-» /love-message
-» /textoncup2
-» /burn-paper
-» /smoke
-» /romantic-messages
-» /shadow-sky
-» /text-cup
-» /coffecup
-» /battlegrounds-logo
-» /battlefield4
-» /text-8bit
-╰──────────◇
+    var caption = `NSFW & SFW
+⎋ /typography-flower
+⎋ /under-flower
+⎋ /bevel-text
+⎋ /silk-text
+⎋ /sweet-andy
+⎋ /smoke-typography
+⎋ /carvedwood
+⎋ /scary-cemetery
+⎋ /royallook
+⎋ /coffeecup2
+⎋ /illuminated
+⎋ /harry-potter2
+⎋ /birthday-cake
+⎋ /embroidery
+⎋ /flaming
+⎋ /furtext
+⎋ /nightsky
+⎋ /glow-rainbow
+⎋ /gradient-avatar
+⎋ /white-cube
+⎋ /graffiti-cover
+⎋ /rainbow-shine
+⎋ /smoky-neon
+⎋ /quotes-underfall
+⎋ /vector-nature
+⎋ /yellow-rose
+⎋ /love-text
+⎋ /underwater-ocean
+⎋ /nature-text
+⎋ /wolf-metal
+⎋ /summer-text
+⎋ /wooden-board
+⎋ /quote-wood
+⎋ /love-text
+⎋ /quotes-undergrass
+⎋ /naruto-banner
+⎋ /love-message
+⎋ /textoncup2
+⎋ /burn-paper
+⎋ /smoke
+⎋ /romantic-messages
+⎋ /shadow-sky
+⎋ /text-cup
+⎋ /coffecup
+⎋ /battlegrounds-logo
+⎋ /battlefield4
+⎋ /text-8bit
+
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -909,61 +907,61 @@ exports.textprocmd = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「  TEXT PRO 」 
-» /3dbox
-» /3dchrome
-» /3dglue
-» /3dstone
-» /abstra
-» /advanced
-» /bear
-» /berry
-» /biscuit
-» /black-metal
-» /blackpink
-» /blood
-» /blood2
-» /blue-balloon
-» /blue-gem
-» /blue-glass
-» /blue-glitter
-» /blue-jewelry
-» /blue-metal
-» /blue-sparkling
-» /bokeh
-» /bread
-» /broken
-» /bronze-glitter
-» /candy
-» /captain-as2
-» /carbon
-» /chocolate
-» /chrismast
-» /christmas
-» /cloudsky
-» /cyan-balloon
-» /cyan-glass
-» /cyan-jewelry
-» /cyan-sparkling
-» /dark-gold
-» /decorate
-» /decorate-purple
-» /decorative
-» /deluxe-gold
-» /demon
-» /denim
-» /discovery
-» /dropwater
-» /drug
-» /embossed
-» /engraved
-» /equalizer
-» /eroded-metal
-╰──────────◇
+    var caption = `TEXT PRO
+⎋ /3dbox
+⎋ /3dchrome
+⎋ /3dglue
+⎋ /3dstone
+⎋ /abstra
+⎋ /advanced
+⎋ /bear
+⎋ /berry
+⎋ /biscuit
+⎋ /black-metal
+⎋ /blackpink
+⎋ /blood
+⎋ /blood2
+⎋ /blue-balloon
+⎋ /blue-gem
+⎋ /blue-glass
+⎋ /blue-glitter
+⎋ /blue-jewelry
+⎋ /blue-metal
+⎋ /blue-sparkling
+⎋ /bokeh
+⎋ /bread
+⎋ /broken
+⎋ /bronze-glitter
+⎋ /candy
+⎋ /captain-as2
+⎋ /carbon
+⎋ /chocolate
+⎋ /chrismast
+⎋ /christmas
+⎋ /cloudsky
+⎋ /cyan-balloon
+⎋ /cyan-glass
+⎋ /cyan-jewelry
+⎋ /cyan-sparkling
+⎋ /dark-gold
+⎋ /decorate
+⎋ /decorate-purple
+⎋ /decorative
+⎋ /deluxe-gold
+⎋ /demon
+⎋ /denim
+⎋ /discovery
+⎋ /dropwater
+⎋ /drug
+⎋ /embossed
+⎋ /engraved
+⎋ /equalizer
+⎋ /eroded-metal
+
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -991,68 +989,68 @@ exports.textprocmd2 = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「  TEXT PRO 」 
-» /fabric
-» /fiction
-» /firework
-» /glitch
-» /gloss
-» /glossy
-» /glossy-blue
-» /glossy-carbon
-» /gold-balloon
-» /gold-glitter
-» /gold-sparkling
-» /golden
-» /gradient
-» /gradient2
-» /green-balloon
-» /green-glass
-» /green-glitter
-» /green-jewelry
-» /green-neon
-» /green-sparkling
-» /halloween
-» /halloween2
-» /holographic
-» /honey2
-» /hot-metal
-» /ice
-» /joker
-» /juice
-» /koifish
-» /luxury2
-» /magma
-» /marble
-» /marble2
-» /matrix
-» /metal-silver
-» /metaldark
-» /metallic2
-» /minion
-» /multicolor
-» /natural
-» /neon
-» /neon-devil
-» /neon-light
-» /neon2
-» /neonc
-» /neonlight
-» /neonligth2
-» /newyear
-» /newyear2
-» /orange-glass
-» /orange-jewelry
-» /oscar
-» /papercut
-» /peridot
-» /pink-balloon
-» /pink-glitter
-╰──────────◇
+    var caption = `TEXT PRO
+⎋ /fabric
+⎋ /fiction
+⎋ /firework
+⎋ /glitch
+⎋ /gloss
+⎋ /glossy
+⎋ /glossy-blue
+⎋ /glossy-carbon
+⎋ /gold-balloon
+⎋ /gold-glitter
+⎋ /gold-sparkling
+⎋ /golden
+⎋ /gradient
+⎋ /gradient2
+⎋ /green-balloon
+⎋ /green-glass
+⎋ /green-glitter
+⎋ /green-jewelry
+⎋ /green-neon
+⎋ /green-sparkling
+⎋ /halloween
+⎋ /halloween2
+⎋ /holographic
+⎋ /honey2
+⎋ /hot-metal
+⎋ /ice
+⎋ /joker
+⎋ /juice
+⎋ /koifish
+⎋ /luxury2
+⎋ /magma
+⎋ /marble
+⎋ /marble2
+⎋ /matrix
+⎋ /metal-silver
+⎋ /metaldark
+⎋ /metallic2
+⎋ /minion
+⎋ /multicolor
+⎋ /natural
+⎋ /neon
+⎋ /neon-devil
+⎋ /neon-light
+⎋ /neon2
+⎋ /neonc
+⎋ /neonlight
+⎋ /neonligth2
+⎋ /newyear
+⎋ /newyear2
+⎋ /orange-glass
+⎋ /orange-jewelry
+⎋ /oscar
+⎋ /papercut
+⎋ /peridot
+⎋ /pink-balloon
+⎋ /pink-glitter
+
 `
     await alpha.editMessageMedia({
         type: "photo",
@@ -1080,83 +1078,83 @@ exports.textprocmd3 = async (alpha, thumbnail, user_id) => {
             }
         ],
         [{
-            text: '⚘ Owner ⚘',
+            text: '👑 Owner 👑',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「  TEXT PRO 」 
-» /pink-sparkling
-» /purple
-» /purple-balloon
-» /purple-gem
-» /purple-glass
-» /purple-glitter
-» /purple-jewelry
-» /purple-shiny-glass
-» /purple-sparkling
-» /rainbow2
-» /red-balloon
-» /red-glass
-» /red-jewelry
-» /red-sparkling
-» /road-warning
-» /robot
-» /rock
-» /rusty
-» /scifi
-» /shiny
-» /silver-glitter
-» /silver-jewelry
-» /sircuit
-» /skeleton
-» /sketch
-» /snow
-» /steel
-» /strawberry
-» /summer
-» /summery
-» /thunder
-» /thunder2
-» /toxic
-» /transformer
-» /underwater
-» /wall
-» /water-pipe
-» /watercolor
-» /wicker
-» /wonderful-graffiti
-» /wood
-» /writing
-» /xmas
-» /yellow-glass
-» /yellow-jewelry
-» /horror
-» /game8bit
-» /layered
-» /glitch2
-» /cool-graffiti
-» /cool-wall-graffiti
-» /realistic
-» /space3d
-» /glitch-tiktok
-» /stone
-» /marvel
-» /marvel2
-» /metal-rose-gold
-» /pornhub
-» /avengers
-» /metal-rainbow
-» /metal-gold
-» /metal-galaxy
-» /lion
-» /wolf-black-white
-» /wolf-galaxy
-» /ninja
-» /3dsteel
-» /horror2
-» /lava
-» /bagel
-╰──────────◇
+    var caption = `TEXT PRO
+⎋ /pink-sparkling
+⎋ /purple
+⎋ /purple-balloon
+⎋ /purple-gem
+⎋ /purple-glass
+⎋ /purple-glitter
+⎋ /purple-jewelry
+⎋ /purple-shiny-glass
+⎋ /purple-sparkling
+⎋ /rainbow2
+⎋ /red-balloon
+⎋ /red-glass
+⎋ /red-jewelry
+⎋ /red-sparkling
+⎋ /road-warning
+⎋ /robot
+⎋ /rock
+⎋ /rusty
+⎋ /scifi
+⎋ /shiny
+⎋ /silver-glitter
+⎋ /silver-jewelry
+⎋ /sircuit
+⎋ /skeleton
+⎋ /sketch
+⎋ /snow
+⎋ /steel
+⎋ /strawberry
+⎋ /summer
+⎋ /summery
+⎋ /thunder
+⎋ /thunder2
+⎋ /toxic
+⎋ /transformer
+⎋ /underwater
+⎋ /wall
+⎋ /water-pipe
+⎋ /watercolor
+⎋ /wicker
+⎋ /wonderful-graffiti
+⎋ /wood
+⎋ /writing
+⎋ /xmas
+⎋ /yellow-glass
+⎋ /yellow-jewelry
+⎋ /horror
+⎋ /game8bit
+⎋ /layered
+⎋ /glitch2
+⎋ /cool-graffiti
+⎋ /cool-wall-graffiti
+⎋ /realistic
+⎋ /space3d
+⎋ /glitch-tiktok
+⎋ /stone
+⎋ /marvel
+⎋ /marvel2
+⎋ /metal-rose-gold
+⎋ /pornhub
+⎋ /avengers
+⎋ /metal-rainbow
+⎋ /metal-gold
+⎋ /metal-galaxy
+⎋ /lion
+⎋ /wolf-black-white
+⎋ /wolf-galaxy
+⎋ /ninja
+⎋ /3dsteel
+⎋ /horror2
+⎋ /lava
+⎋ /bagel
+
 `
     await alpha.editMessageMedia({
         type: "photo",
