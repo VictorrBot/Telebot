@@ -2254,15 +2254,14 @@ ${prefix}ytmp4 ${url}`
             }
             break
 case 'sticker':
-  if (!isQuotedImage && !isMedia) return reply(`Kirim gambar dengan caption ${prefix}sticker`)
-  const media = isQuotedImage ? quotedMsg : message
-  const mediaType = Object.keys(media)[0]
-  if (mediaType !== 'image') return reply(`Kirim gambar dengan caption ${prefix}sticker`)
+  if (!message.reply_to_message || !message.reply_to_message.media || !message.reply_to_message.media.type || message.reply_to_message.media.type !== 'photo') {
+    return reply(`Balas gambar dengan caption ${prefix}sticker`)
+  }
+
   try {
-    reply(lang.wait)
-    const imageBuffer = await download(media)
+    const imageBuffer = await download(message.reply_to_message)
     const sticker = await createSticker(imageBuffer)
-    await alpha.sendSticker(chatId, sticker, { replyToMessage: msgId })
+    await alpha.sendSticker(chatId, sticker, { reply_to_message_id: msg.message_id })
   } catch (err) {
     console.error(err)
     reply(lang.error)
