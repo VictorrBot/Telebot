@@ -11,7 +11,7 @@ global.APIs = {
 //buy apikey premium 0887435047326
 // Free apikey (silahkan login terus ganti Your Key dgn apikey lu)
 global.APIKeys = {
-   'https://api.zeeoneofc.my.id': 'VE3yXpPC', // 👉 login https://api.zeeoneofc.my.id to get apikey
+   'https://api.zeeoneofc.my.id': 'Shirooo', // 👉 login https://api.zeeoneofc.my.id to get apikey
 }
 
 //language 
