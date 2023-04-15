@@ -619,14 +619,6 @@ ${prefix}ytmp4 ${url}`
                 }
             }
             break
-case 'sticker':
-  if (!isMedia && !isQuotedImage) return reply('Kirim gambar atau reply gambar dengan caption *#sticker*')
-  const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(await getQuotedObj())).message.extendedTextMessage.contextInfo : message
-  const media = await downloadAndSaveMediaMessage(encmedia)
-  const buffer = await resizeImage(media, 512, 512) // mengubah ukuran gambar menjadi 512 x 512 piksel
-  const result = await client.sendImageAsSticker(from, buffer) // membuat stiker dan mengirimkannya ke obrolan
-  reply('Berhasil membuat stiker!')
-  break
             case "tiktoknowm":
             case "tiktok": {
                 if (!args[0]) return reply(`Kirim perintah:\n${prefix+command} link tiktok video\n\nContoh penggunaan:\n${prefix+command} https://www.tiktok.com/@Kirara.official/video/7210229439744003355?_r=1&u_code=e44201c8bfkd30®ion=ID&mid=7202111782981913370&preview_pb=0&language=id&_d=e0cah74j08m7c7&share_item_id=7210229439744003355&source=h5_t×tamp=1679216331&user_id=7148061777321133083&sec_user_id=MS4wLjABAAAA50SieLfP2YD-R-gqSE3svcPxaPqr_53pA6RKyJUkQo_AreOGrLDiVRnajBVglVIk&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7160625938232592154&share_link_id=6b2fea89-b038-4919-8d58-38b4efba5b9c&share_app_id=1180&ugbiz_name=Main&ug_btm=b8727%2Cb2878`)
@@ -2261,6 +2253,20 @@ case 'sticker':
 
             }
             break
+case 'sticker':
+    if (!isGroupMsg) return reply(lang.only_group);
+    if (!isQuotedImage && !isQuotedVideo) return reply(lang.only_img_vid);
+    reply(lang.wait)
+    try {
+        const mediaData = await decryptMedia(quotedMsg, uaOverride);
+        const imageBase64 = `data:${quotedMsg.mimetype};base64,${mediaData.toString('base64')}`;
+        const sticker = await client.sendSticker(chatId, imageBase64);
+        reply(lang.ok, { sticker });
+    } catch (err) {
+        console.error(err);
+        reply(lang.error);
+    }
+    break;
             case 'pencilsketch': {
                 if (!text) return reply(`Kirim perintah:\n${prefix+command} teks1|teks2|icon\n\nContoh penggunaan:\n${prefix+command} Kirara|Bot|panda`)
                 if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks1|teks2|icon\n\nContoh penggunaan:\n${prefix+command} Kirara|Bot|panda`)
