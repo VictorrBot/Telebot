@@ -2253,21 +2253,6 @@ ${prefix}ytmp4 ${url}`
 
             }
             break
-case 'sticker':
-  if (!message.reply_to_message || !message.reply_to_message.media || !message.reply_to_message.media.type || message.reply_to_message.media.type !== 'photo') {
-    return reply(`Balas gambar dengan caption ${prefix}sticker`)
-  }
-
-  try {
-    const imageBuffer = await download(message.reply_to_message)
-    const sticker = await createSticker(imageBuffer)
-    await alpha.sendSticker(chatId, sticker, { reply_to_message_id: message.reply_to_message.message_id })
-  } catch (err) {
-    console.error(err)
-    reply(lang.error)
-  }
-  break
-
             case 'pencilsketch': {
                 if (!text) return reply(`Kirim perintah:\n${prefix+command} teks1|teks2|icon\n\nContoh penggunaan:\n${prefix+command} Kirara|Bot|panda`)
                 if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks1|teks2|icon\n\nContoh penggunaan:\n${prefix+command} Kirara|Bot|panda`)
