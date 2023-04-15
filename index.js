@@ -337,7 +337,7 @@ module.exports = alpha = async (alpha, bot) => {
                 key += `• Size: ${filesize}\n`
                 key += `• Download: ${getdl.data}\n\n`
                 key += `Ukuran media melebihi batas, silahkan download sendiri melalui link di atas.`
-                if (size > 500000) { //batas download 50mb, tamabahin jika kurang (misal 100mb = 100000)
+                if (size > 200000) { //batas download 50mb, tamabahin jika kurang (misal 100mb = 100000)
                     await alpha.replyWithPhoto({
                         url: thumbnail
                     }, {
@@ -389,7 +389,7 @@ module.exports = alpha = async (alpha, bot) => {
                 key += `• Size: ${filesize}\n`
                 key += `• Download: ${getdl.data}\n\n`
                 key += `Ukuran media melebihi batas, silahkan download sendiri melalui link di atas.`
-                if (size > 500000) { //batas download 50mb, tamabahin jika kurang (misal 100mb = 100000)
+                if (size > 200000) { //batas download 50mb, tamabahin jika kurang (misal 100mb = 100000)
                     await alpha.replyWithPhoto({
                         url: thumbnail
                     }, {
