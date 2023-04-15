@@ -2254,19 +2254,20 @@ ${prefix}ytmp4 ${url}`
             }
             break
 case 'sticker':
-    if (!isGroupMsg) return reply(lang.only_group);
-    if (!isQuotedImage && !isQuotedVideo) return reply(lang.only_img_vid);
+  if (!isQuotedImage && !isMedia) return reply(`Kirim gambar dengan caption ${prefix}sticker`)
+  const media = isQuotedImage ? quotedMsg : message
+  const mediaType = Object.keys(media)[0]
+  if (mediaType !== 'image') return reply(`Kirim gambar dengan caption ${prefix}sticker`)
+  try {
     reply(lang.wait)
-    try {
-        const mediaData = await decryptMedia(quotedMsg, uaOverride);
-        const imageBase64 = `data:${quotedMsg.mimetype};base64,${mediaData.toString('base64')}`;
-        const sticker = await client.sendSticker(chatId, imageBase64);
-        reply(lang.ok, { sticker });
-    } catch (err) {
-        console.error(err);
-        reply(lang.error);
-    }
-    break;
+    const imageBuffer = await download(media)
+    const sticker = await createSticker(imageBuffer)
+    await alpha.sendSticker(chatId, sticker, { replyToMessage: msgId })
+  } catch (err) {
+    console.error(err)
+    reply(lang.error)
+  }
+  break
             case 'pencilsketch': {
                 if (!text) return reply(`Kirim perintah:\n${prefix+command} teks1|teks2|icon\n\nContoh penggunaan:\n${prefix+command} Kirara|Bot|panda`)
                 if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks1|teks2|icon\n\nContoh penggunaan:\n${prefix+command} Kirara|Bot|panda`)
